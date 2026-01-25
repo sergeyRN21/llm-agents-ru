@@ -26,7 +26,7 @@ if not OPENROUTER_API_KEY:
     raise EnvironmentError("Установите OPENROUTER_API_KEY в файле .env")
 
 llm = ChatOpenAI(
-    model="anthropic/claude-sonnet-4.5",
+    model="google/gemini-3-flash-preview",
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
     temperature=0.0
